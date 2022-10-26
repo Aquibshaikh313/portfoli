@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        .container-fluid {
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            border: 1px solid black;
+            width: 100%;
+        }
+
+        .me {
+            font-size: 100px;
+            font-family: 'Gill Sans', 'Gill Sans MT';
+        }
+        .me:hover{
+            color: aqua;
+            
+        }
+        
+
+        a {
+            text-decoration: none;
+            color: grey;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .A {
+            width: 100px;
+            height: 120px;
+            margin-bottom: 60px;
+        }
+        .proj {
+            font-family: 'Gill Sans', 'Gill Sans MT';
+            color: white;
+        }
+
+        .proj:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .name {
+            margin-right: 65px;
+        }
+
+        .title {
+            position: fixed;
+            font-family: 'Gill Sans', 'Gill Sans MT';
+            font-size: 25px;
+
+        }
+
+        .navbar-nav {
+            margin-top: 50px;
+            font-size: 30px;
+            position: fixed;
+            height: 550px;
+            width: 150px;
+        }
+
+        .info {
+            margin-top: 150px;
+            margin-left: 400px;
+        }
+
+        .new {
+            font-size: 20px;
+            margin-bottom: 1px;
+        }
+        
+
+        .Education,
+        .projects,
+        .skills {
+            margin-top: 40px;
+            margin-left: 180px;
+            font-family: 'Gill Sans', 'Gill Sans MT';
+        }
+        
+    </style>
+    <script>
+        function GetDetails(name) {
+            document.getElementById('display').innerHTML = name.fontcolor('aqua');
+
+        }
+        function OpenImage(name) {
+            switch (name) {
+                case "Cards":
+                    window.open("/public/Images/cards.png", "Denim Jacket", "width=1200 height=768",);
+                    break;
+                case "Netflix Login":
+                    window.open("/public/Images/signin.png.png", "Netflix Login", "width=1200 height=768",);
+                    break;
+                case "Instagram Login":
+                    window.open("/public/Images/insta.png.png", "Instagram Login", "width=1200 height=768",);
+                    break;
+                case "GDS":
+                    window.open("/public/Images/gds.png.png", "GDS", "width=1200 height=768",);
+                    break;
+                case "Amazon":
+                    window.open("/public/Images/amazon.png.png", "Amazon", "width=1200 height=768",);
+                    break;
+                case "Responsive":
+                    window.open("/public/Images/responsive.png.png", "Responsive", "width=1200 height=768",);
+                    break;
+                case "Portal":
+                    window.open("/public/Images/portal.png.png", "Portal", "width=1200 height=768",);
+                    break;
+                case "Hotel Registration":
+                    window.open("/public/Images/hotelregistration.png", "Hotel Registration", "width=1200 height=768",);
+                    break;
+                case "Casscading Dropdown":
+                    window.open("/public/Images/casscadingdropdown.png", "Casscading Dropdown", "width=1200 height=768",);
+                    break;
+            }
+        } 
+    </script>
+</head>
+
+<body class="container-fluid mt-3 ">
+    <header id="home" class="p-1">
+        <h2 class="title">PORTFOLIO</h2>
+        <div>
+
+            <ul class="navbar-nav border p-4">
+                <li class="new"><img src="../public/Images/font.png"  style="width:105px; height: 105px;"></li><br>
+                <div class="up">
+                    <h4 class="text-info ms-2">Aquib</h4>
+                <li>
+                    <p class="text-secondary" style="font-size: 14px;"> Web Developer</p>
+                </li>
+                <li class="nav-item"><a href="">Home</a></li>
+                <li class="nav-item"><a href="#Education">About me</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#project">Project</a></li>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/aquib-shaikh-3857ab226/"><span
+                            class="bi bi-linkedin"></span></a>
+                    <a href="https://instagram.com/aquibshaikh313?igshid=YmMyMTA2M2Y="><span
+                            class="bi bi-instagram"></span></a>
+                    <a href="https://www.youtube.com/channel/UCeXFUy2XeF3_DGM_Jt7-KDA"><span
+                            class="bi bi-youtube"></span></a>
+                </div>
+                </div>
+            
+            </ul>
+        </div>
+        <div class="info">
+            <div>
+                <h1 class="me">
+                    Hi,<br><b> I'm <img class="A" src="/public/Images/font.png"><b class="name">QUIB,</b></b> <br>Web
+                    Developer.
+
+                </h1><br>
+                <p class="text-secondary">Front end Developer</p>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- EDUCATION -->
+
+    <div class="Education" id="Education">
+        <h2><b>EDUCATION</b></h2>
+        <ul>
+            <li>
+                <h4 class="text-info"><b>Secondary School Certificate(SSC)</b></h4>
+                <p class="text-secondary">-Carmel Covent School, Ahmednagar Maharashtra.</p>
+            </li>
+            <li>
+                <h4 class="text-info"><b>Higher Secondary Certificate(HSC)</h4>
+                <p class="text-secondary">-Residential Jr.College, Ahmednagar Maharashtra.</p>
+            </li>
+            <li>
+                <h4 class="text-info"><b>Bachelor of Engineering(BE)</b></h4>
+                <p class="text-secondary">-Dr.Vithalrao Vikhe patil College of Engineering,Ahmednagar Maharashtra.</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Skills -->
+    <h2 class="skills" id="skills"><b>SKILLS</b></h2>
+    <ul class="skills" style="font-size: 22px;">
+
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Bootstrap</li>
+        <li>Sass/Less</li>
+        <li>Javascript</li>
+        <li>jQuery</li>
+        <li>React</li>
+    </ul>
+
+    <!-- Projects -->
+
+    <div class="projects" id="project">
+        <div class="d-flex">
+            <h2><b>PROJECTS</b></h2>:<h2 id="display"></h2>
+        </div>
+        <table  width="100%" border="1"frame="void">
+            <tbody>
+                <tr>
+                    <td><img src="/public/Images/Cards.png" name="Cards" ondblclick="OpenImage(this.name)"
+                            onmouseover="GetDetails('Shopping Items')" width="380px">
+                        <p><a href="" class="proj">Cards</a></p>
+                    </td>
+                    <td><img src="/public/Images/signin.png.png" name="Netflix Login" ondblclick="OpenImage(this.name)"
+                            width="380px">
+                        <p><a href="" class="proj">Netflix login page</a></p>
+                    </td>
+                    <td><img src="/public/Images/insta.png.png" name="Instagram Login" ondblclick="OpenImage(this.name)"
+                            width="380px">
+                        <p><a href="" class="proj">Instagram login page</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="/public/Images/gds.png.png" name="GDS" ondblclick="OpenImage(this.name)"
+                            width="380px">
+                        <p><a href="" class="proj">GDS Online Engagement</a></p>
+                    </td>
+
+                    <td><img src="/public/Images/Amazons.png.png" name="Amazon" ondblclick="OpenImage(this.name)"
+                            width="380px">
+                        <p><a href="http://127.0.0.1:5500/Javascript%20Examples/Amazon.html" class="proj">Amazon</a></p>
+                    </td>
+
+                    <td><img src="/public/Images/responsive.png.png" name="Responsive" ondblclick="OpenImage(this.name)"
+                            width="380px">
+                        <p><a href="" class="proj">Responsive Design</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="/public/Images/portal.png.png" name="Portal" ondblclick="OpenImage(this.name)"
+                            width="380">
+                        <p><a href="" class="proj">National Portal of India</a></p>
+                    </td>
+                    <td><img src="/public/Images/HotelRegistration.png" name="Hotel Registration"
+                            ondblclick="OpenImage(this.name)" width="380px">
+                        <p><a href="http://127.0.0.1:5500/Javascript%20Examples/Hotel.html" class="proj">Hotel Regitration Form</a></p>
+                    </td>
+                    <td><img src="/public/Images/CasscadingDropdown.png" name="Casscading Dropdown"
+                            ondblclick="OpenImage(this.name)" width="380">
+                        <p><a href="http://127.0.0.1:5500/Javascript%20Examples/CascadingINOX.html" class="proj">Casscading Dropdown</a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div><br>
+
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+
+
+</body>
+
+</html>
